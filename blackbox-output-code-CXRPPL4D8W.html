@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portofolio Mr. Xunz - Perjalanan Programmer Otodidak</title>
+    <meta name="google-site-verification" content="jOWywASgKPIG9LRLQrwFDAcfv1C_kvUU0MVv1R_W_Ig" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background: #000000;
+            color: #00ff00;
+            min-height: 100vh;
+            margin: 0;
+            overflow-x: hidden;
+        }
+        /* Hacker style background with matrix effect */
+        #matrix {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: black;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: rgba(0, 0, 0, 0.85);
+            border: 1px solid #00ff00;
+            border-radius: 8px;
+            box-shadow: 0 0 15px #00ff00;
+        }
+        h1, h2, h3 {
+            text-shadow: 0 0 10px #00ff00;
+        }
+        a {
+            color: #00ff00;
+            text-decoration: underline;
+        }
+        a:hover {
+            color: #00cc00;
+        }
+        img.profile-photo {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 3px solid #00ff00;
+            margin-bottom: 1rem;
+            box-shadow: 0 0 15px #00ff00;
+        }
+        section {
+            margin-bottom: 3rem;
+        }
+        .info-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        .info-list li {
+            margin-bottom: 0.5rem;
+        }
+        .skill-bar {
+            background: #003300;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-bottom: 1rem;
+            height: 16px;
+        }
+        .skill-fill {
+            background: #00ff00;
+            height: 100%;
+            width: 0;
+            transition: width 1.5s ease-in-out;
+        }
+        .skills-container {
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="matrix"></canvas>
+
+    <div class="container">
+        <header class="text-center mb-8">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/dde7b6d1-9ef2-4c48-833a-adf3f1f2ab58.png" alt="Foto Mr. Xunz dengan tema hacker dalam latar belakang cyber matrix" class="profile-photo" />
+            <h1 class="text-4xl font-bold mb-2">Mr. Xunz</h1>
+            <p>Programmer Otodidak & Pelajar SMK Prima Unggul</p>
+            <p>Jakarta, Indonesia</p>
+        </header>
+
+        <section id="data-diri">
+            <h2 class="text-3xl font-semibold mb-4">Data Diri</h2>
+            <ul class="info-list">
+                <li><strong>Nama:</strong> Mr. Xunz</li>
+                <li><strong>Tempat, Tanggal Lahir:</strong> Jakarta, 24 Agustus 2004</li>
+                <li><strong>Asal:</strong> Jakarta</li>
+                <li><strong>Sekolah:</strong> SMK Prima Unggul (Sedang Bersekolah, belum lulus)</li>
+                <li><strong>SD:</strong> Sudimara 02 (2010)</li>
+                <li><strong>SMP:</strong> SMP Negeri 11 (2016)</li>
+                <li><strong>SMK:</strong> Prima Unggul (2024)</li>
+            </ul>
+        </section>
+
+        <section id="perjalanan">
+            <h2 class="text-3xl font-semibold mb-4">Perjalanan Saya</h2>
+            <p>
+                Saya mulai mengenal dunia komputer dan teknologi sejak Sekolah Dasar di tahun 2010 di SD Sudimara 02. Dari kecil saya belajar otodidak tentang komputer, mulai dari mengenal software sederhana hingga mencoba membuat program kecil menggunakan QBasic. Pada masa itu, komputer masih terasa seperti gadget ajaib yang datang dari masa depan. Guru saya yang bernama Pak Ahmad selalu memberi kami tugas sederhana seperti mencetak nama menggunakan Paint atau bermain game edukasi seperti Mario Bros. Itu adalah awal yang membangkitkan rasa ingin tahu saya. Saya ingat pertama kali melihat logo Windows 95 yang muncul di layar monitor besar di kelas, dan saya bertanya-tanya bagaimana mesin itu bisa menghasilkan gambar yang begitu indah. Setelah pulang sekolah, saya sering 'ngibul' di internet cafe dekat rumah sambil belajar dari majalah komputer seperti "Chiper" atau "Komputer Kita". Belajar otodidak di usia itu sangat menantang tetapi menyenangkan; seringkali saya terjebak jam berjam mencoba kode yang tidak mau berfungsi, tapi itu membuat saya lebih sabar dan tekun. Saya juga mulai mencoba menggambar desain sederhana menggunakan Microsoft Word dan Excel untuk membuat tabel sederhana, yang menjadi pondasi kemampuan saya dalam tools office.
+            </p>
+            <p>
+                Saat SMP di SMP Negeri 11 pada tahun 2016, saya mulai memperdalam kemampuan saya dengan belajar HTML, CSS, dan sedikit JavaScript secara otodidak melalui internet dan buku. Era itu adalah masa di mana smartphone mulai populer, dan saya menggunakan android sederhana untuk browsing di warung net. Saya menemukan situs seperti kompas.com tutorial yang memberikan tutorial gratis tentang web development. Setiap sore setelah sekolah, saya pergi ke warnet untuk mencoba kode-kode baru. Awalnya sangat frustrasi; coding error muncul di mana-mana, tapi itu mengajarkan saya tentang debugging yang sekarang jadi skill utama. Saya juga mulai tertarik dengan hardware komputer dan jaringan; membongkar CPU lama di rumah dan mencoba mengganti RAM sambil belajar dari forum Kaskus. Di sekolah, pelajaran komputer lebih fokus pada Microsoft Office, tapi itu tidak cukup bagi saya. Saya memanfaatkan lab untuk eksperimen dengan HTML, membuat website sederhana tentang hobi saya seperti koleksi gambar kartun. Itu periode di mana saya bergabung dengan komunitas kecil para pemula programmer di Jakarta, bertukar tips melalui Yahoo Messenger. Belajar otodidak selama ini membentuk mindset saya: tidak ada guru yang lebih baik dari trial and error. Saya juga mulai belajar bahasa pemrograman seperti Pascal untuk olimpiade tingkat kabupaten, yang membuat saya kompetitif dan motivasi.
+            </p>
+            <p>
+                Saat ini saya masih bersekolah di SMK Prima Unggul jurusan Teknik Informatika dan menargetkan lulus pada tahun 2024. Di SMK ini, pengalaman belajar otodidak saya sangat membantu dalam memahami konteks formal. Kurikulumnya meliputi pemrograman Java dan C++, yang baru bagi saya secara teknis, tapi logikanya mirip dengan apa yang saya pelajari sendiri. Saya juga mendapatkan pembelajaran tentang database MySQL dan jaringan komputer, yang menggabungkan interest hardware saya sebelumnya. Magang di tahun ketiga membuat saya terjun ke dunia nyata, bekerja pada projek sistem informasi untuk bisnis kecil. Itu pengalaman berharga; saya belajar tentang teamwork dan deadline, sesuatu yang tidak ada di belajar otodidak. Namun, spirit otodidak tetap kuat; di malam hari, saya belajar frame seperti React melalui YouTube dan kursus dari udemy. SMK Prima Unggul memberikan infrastruktur yang mendukung inovasi, seperti laboratorium dengan komputer terbaru dan akses internet cepat, yang membuat proses belajar lebih efisien. Saya juga aktif dalam proyek-proyek ekstrakurikuler, seperti membuat aplikasi mobile sederhana untuk sekolah atau bergabung dalam kompetisi coding nasional. Masa ini adalah puncak pengembangan saya, di mana saya belajar bahwa education formal dan otodidak saling melengkapi untuk mencapai karier di bidang IT yang saya impikan.
+            </p>
+            <p>
+                Secara keseluruhan, perjalanan dari SD Sudimara 02 hingga SMK Prima Unggul telah membentuk saya menjadi programmer yang mandiri dan inovatif. Era awal di SD adalah fondasi rasa ingin tahu, SMP adalah periode eksplorasi otodidak intens, dan SMK adalah pengayaan formal. Tantangan terbesar adalah ketekunan dalam menghadapi kesulitan coding, tapi itu juga yang membuat saya kuat. Ke depan, saya berencana terus belajar teknologi seperti AI dan cybersecurity, mungkin kuliah di kampus teknik atau langsung kerja di startup. Saya percaya bahwa kombinasi belajar otodidak dan formal adalah kunci sukses di dunia yang berubah cepat seperti IT. Ini bukan hanya tentang skills, tapi juga tentang passion yang saya temukan sejak kecil dan terus berkembang hingga sekarang.
+            </p>
+        </section>
+
+        <section id="kemampuan">
+            <h2 class="text-3xl font-semibold mb-4">Kemampuan IT Saya</h2>
+            <div class="skills-container">
+                <div>
+                    <p>HTML & CSS</p>
+                    <div class="skill-bar"><div class="skill-fill" style="width: 95%;"></div></div>
+                </div>
+                <div>
+                    <p>JavaScript</p>
+                    <div class="skill-bar"><div class="skill-fill" style="width: 90%;"></div></div>
+                </div>
+                <div>
+                    <p>PHP</p>
+                    <div class="skill-bar"><div class="skill-fill" style="width: 85%;"></div></div>
+                </div>
+                <div>
+                    <p>Python</p>
+                    <div class="skill-bar"><div class="skill-fill" style="width: 88%;"></div></div>
+                </div>
+                <div>
+                    <p>Networking</p>
+                    <div class="skill-bar"><div class="skill-fill" style="width: 85%;"></div></div>
+                </div>
+                <div>
+                    <p>Hardware Troubleshooting</p>
+                    <div class="skill-bar"><div class="skill-fill" style="width: 90%;"></div></div>
+                </div>
+                <div>
+                    <p>Database Management (MySQL)</p>
+                    <div class="skill-bar"><div class="skill-fill" style="width: 82%;"></div></div>
+                </div>
+                <div>
+                    <p>Cybersecurity Basics</p>
+                    <div class="skill-bar"><div class="skill-fill" style="width: 70%;"></div></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="kontak" class="text-center">
+            <h2 class="text-3xl font-semibold mb-4">Kontak</h2>
+            <p>Ingin berkolaborasi atau bertanya? Kirim email ke:</p>
+            <a href="mailto:mr_xunz@example.com" class="inline-block mt-2 px-6 py-3 border border-green-500 rounded hover:bg-green-700 hover:text-black transition">mr_xunz@example.com</a>
+        </section>
+    </div>
+
+    <script>
+        // Matrix effect background
+        const canvas = document.getElementById('matrix');
+        const ctx = canvas.getContext('2d');
+
+        let width = window.innerWidth;
+        let height = window.innerHeight;
+        canvas.width = width;
+        canvas.height = height;
+
+        const letters = '01';
+        const fontSize = 16;
+        const columns = Math.floor(width / fontSize);
+        const drops = new Array(columns).fill(1);
+
+        function draw() {
+            ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+            ctx.fillRect(0, 0, width, height);
+
+            ctx.fillStyle = '#00ff00';
+            ctx.font = fontSize + 'px monospace';
+
+            for (let i = 0; i < drops.length; i++) {
+                const text = letters.charAt(Math.floor(Math.random() * letters.length));
+                ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+
+                if (drops[i] * fontSize > height && Math.random() > 0.975) {
+                    drops[i] = 0;
+                }
+                drops[i]++;
+            }
+        }
+
+        setInterval(draw, 33);
+
+        window.addEventListener('resize', () => {
+            width = window.innerWidth;
+            height = window.innerHeight;
+            canvas.width = width;
+            canvas.height = height;
+        });
+    </script>
+</body>
+</html></content>
+</create_file>
